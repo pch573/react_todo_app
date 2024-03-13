@@ -3,6 +3,8 @@ import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 import List from "./List";
 
 export default function Lists({ todoData, setTodoData }) {
+  console.log("Lists Component");
+
   const handleEnd = (result) => {
     console.log("result", result);
     // 목적지가 없으면 이 함수를 종료합니다.

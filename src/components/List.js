@@ -9,6 +9,8 @@ const List = ({
   provided,
   snapshot,
 }) => {
+  console.log("List Component");
+
   const handleClick = (id) => {
     let newTodoData = todoData.filter((data) => data.id !== id);
     setTodoData(newTodoData);
